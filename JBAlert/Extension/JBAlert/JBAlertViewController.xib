@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JBAlertViewController" customModule="JBAlert">
+            <connections>
+                <outlet property="leftButton" destination="1Wu-3W-NQW" id="aFT-yF-0fd"/>
+                <outlet property="messageLabel" destination="qbO-fB-GXq" id="cvo-Uo-Z2C"/>
+                <outlet property="rightButton" destination="Qdc-GW-rez" id="zQC-in-OTM"/>
+                <outlet property="titleLabel" destination="0nO-wM-B7Z" id="xIl-ij-MgN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kzr-aL-c5s"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2a-u1-DnP">
+                    <rect key="frame" x="75" y="298" width="264" height="301"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sl3-7q-daN">
+                            <rect key="frame" x="0.0" y="0.0" width="264" height="251"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SU-dx-FTi">
+                                    <rect key="frame" x="0.0" y="0.0" width="264" height="80"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.on.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-YW-Lf7">
+                                            <rect key="frame" x="94" y="9.5" width="77" height="62"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="L3v-YW-Lf7" firstAttribute="top" secondItem="4SU-dx-FTi" secondAttribute="top" constant="11" id="7xv-gX-mYy"/>
+                                        <constraint firstAttribute="trailing" secondItem="L3v-YW-Lf7" secondAttribute="trailing" constant="93" id="9Bm-aZ-qkn"/>
+                                        <constraint firstAttribute="height" constant="80" id="UEM-zk-uo4"/>
+                                        <constraint firstAttribute="bottom" secondItem="L3v-YW-Lf7" secondAttribute="bottom" constant="11" id="VJb-zW-53i"/>
+                                        <constraint firstItem="L3v-YW-Lf7" firstAttribute="leading" secondItem="4SU-dx-FTi" secondAttribute="leading" constant="94" id="bUW-9Z-5hL"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bol-Tf-e6e">
+                                    <rect key="frame" x="0.0" y="80" width="264" height="171"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lAc-BK-bIF">
+                                            <rect key="frame" x="0.0" y="0.0" width="264" height="171"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to renew your token now?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nO-wM-B7Z">
+                                                    <rect key="frame" x="0.0" y="0.0" width="264" height="85.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbO-fB-GXq">
+                                                    <rect key="frame" x="0.0" y="85.5" width="264" height="85.5"/>
+                                                    <string key="text">Your auto debit token expires after 30 days.
+
+(If don't renew until 30 days then you can't use auto-debit)</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qbO-fB-GXq" firstAttribute="height" secondItem="0nO-wM-B7Z" secondAttribute="height" id="puH-sc-TAc"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="lAc-BK-bIF" firstAttribute="top" secondItem="bol-Tf-e6e" secondAttribute="top" id="Hfv-yy-lp9"/>
+                                        <constraint firstAttribute="bottom" secondItem="lAc-BK-bIF" secondAttribute="bottom" id="bPU-HO-Dms"/>
+                                        <constraint firstAttribute="trailing" secondItem="lAc-BK-bIF" secondAttribute="trailing" id="eqe-Wn-0xU"/>
+                                        <constraint firstItem="lAc-BK-bIF" firstAttribute="leading" secondItem="bol-Tf-e6e" secondAttribute="leading" id="wVo-Gc-xDH"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="4SU-dx-FTi" firstAttribute="leading" secondItem="sl3-7q-daN" secondAttribute="leading" id="eQ7-3x-jzs"/>
+                                <constraint firstAttribute="trailing" secondItem="4SU-dx-FTi" secondAttribute="trailing" id="f2V-Mx-ovB"/>
+                                <constraint firstItem="4SU-dx-FTi" firstAttribute="top" secondItem="sl3-7q-daN" secondAttribute="top" id="nQ5-av-E5J"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QeE-Hk-w1A">
+                            <rect key="frame" x="0.0" y="251" width="264" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wu-3W-NQW">
+                                    <rect key="frame" x="0.0" y="0.0" width="105.5" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchLeftButton:" destination="-1" eventType="touchUpInside" id="Hfg-co-LhR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdc-GW-rez">
+                                    <rect key="frame" x="105.5" y="0.0" width="158.5" height="50"/>
+                                    <state key="normal" title="OK"/>
+                                    <connections>
+                                        <action selector="touchRightButton:" destination="-1" eventType="touchUpInside" id="XX6-Kp-PGD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="po3-9y-FkV"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QeE-Hk-w1A" secondAttribute="bottom" id="CaF-zr-QqM"/>
+                        <constraint firstItem="QeE-Hk-w1A" firstAttribute="leading" secondItem="a2a-u1-DnP" secondAttribute="leading" id="Ggd-s3-dln"/>
+                        <constraint firstAttribute="trailing" secondItem="sl3-7q-daN" secondAttribute="trailing" id="I6b-pz-TMw"/>
+                        <constraint firstItem="QeE-Hk-w1A" firstAttribute="top" secondItem="sl3-7q-daN" secondAttribute="bottom" id="Ij5-z7-lM3"/>
+                        <constraint firstItem="1Wu-3W-NQW" firstAttribute="width" secondItem="a2a-u1-DnP" secondAttribute="width" multiplier="0.4:1" id="VJ8-8h-V75"/>
+                        <constraint firstItem="sl3-7q-daN" firstAttribute="leading" secondItem="a2a-u1-DnP" secondAttribute="leading" id="alq-AU-l0e"/>
+                        <constraint firstItem="sl3-7q-daN" firstAttribute="top" secondItem="a2a-u1-DnP" secondAttribute="top" id="lCb-qI-lxx"/>
+                        <constraint firstAttribute="trailing" secondItem="QeE-Hk-w1A" secondAttribute="trailing" id="vv0-Qa-cso"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="a2a-u1-DnP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="75" id="3FC-yN-lp9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a2a-u1-DnP" secondAttribute="trailing" constant="75" id="coy-bX-Fpl"/>
+                <constraint firstItem="a2a-u1-DnP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="254" id="qhs-Vm-sUt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="a2a-u1-DnP" secondAttribute="bottom" constant="263" id="vzT-Ra-j0t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.down.on.square.fill" catalog="system" width="122" height="128"/>
+    </resources>
+</document>
