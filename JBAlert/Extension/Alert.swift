@@ -18,7 +18,24 @@ extension UIViewController {
     case alert
   }
   
-  func alert(type:AlertType = .alert,
+  func alertWithoutCancel(type:AlertType = .alert,
+             message: String?,
+             title: String?,
+             rightButtonTitle: String? = nil,
+             rightButtonAction: (() -> Void)? = nil
+  ) {
+    let JBAlert = JBAlertViewController(
+      type: type,
+      title: title,
+      message: message,
+      rightButtonTitle: rightButtonTitle,
+      rightButtonAction: rightButtonAction
+    )
+      
+    present(JBAlert, animated: true)
+  }
+  
+  func alertWithCancel(type:AlertType = .alert,
              message: String?,
              title: String?,
              rightButtonTitle: String? = nil,
@@ -33,7 +50,8 @@ extension UIViewController {
       rightButtonTitle: rightButtonTitle,
       leftButtonTitle: cancelButton,
       rightButtonAction: rightButtonAction,
-      leftButtonAction: leftButtonAction)
+      leftButtonAction: leftButtonAction
+    )
     
     present(JBAlert, animated: true)
   }

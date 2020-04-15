@@ -12,17 +12,39 @@ class ViewController: UIViewController {
   
   // MARK: IBAction
   @IBAction func testButton(_ sender: UIButton) {
-    print("pressed ")
     
-    alert(
-      type: .alert,
-      message: "Your auto debit token expires after 30 days. \n(If don't renew until 30 days then you can't use auto-debit)",
-      title: "Would you like to renew your token now?",
-      rightButtonTitle: "OK",
-      cancelButton: "NO",
-      rightButtonAction: { self.dismiss(animated: true, completion: nil)},
-      leftButtonAction: { self.dismiss(animated: true, completion: nil)}
+    alertWithCancel(type: .alert,
+                    message: "Would you like to test JBalert?", title: "This is only for test purpose",
+                    rightButtonTitle: "Sure",
+                    cancelButton: "Nope",
+                    rightButtonAction: {
+                      self.dismiss(animated: true, completion:
+                        { self.alertWithoutCancel(
+                          type: .success,
+                          message: "Successfully test for OK button!",
+                          title: "JB TEST for OK",
+                          rightButtonTitle: "OK",
+                          rightButtonAction: { self.dismiss(animated: true, completion: nil)}
+                          )
+                      }
+                      )
+    },
+                    leftButtonAction: {
+                      self.dismiss(animated: true, completion:
+                        { self.alertWithoutCancel(
+                          type: .fail,
+                          message: "Successfully test for Cancel button!",
+                          title: "JB TEST for Cancel",
+                          rightButtonTitle: "OK",
+                          rightButtonAction: { self.dismiss(animated: true, completion: nil)}
+                          )
+                      }
+                      )
+    }
+      
     )
+    
+    
     
   }
   
@@ -30,7 +52,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
-
-
+  
+  
 }
 

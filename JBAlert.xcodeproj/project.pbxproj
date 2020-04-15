@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		892216C5244238F700BEC003 /* JBAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892216C4244238F700BEC003 /* JBAlertViewController.swift */; };
 		892216CE2442F9C000BEC003 /* JBAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892216CD2442F9C000BEC003 /* JBAlertViewController.xib */; };
+		8952CE192446D8B700F310AD /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952CE182446D8B700F310AD /* Animation.swift */; };
 		89813AEA243F63CA00F20191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89813AE9243F63CA00F20191 /* AppDelegate.swift */; };
 		89813AEC243F63CA00F20191 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89813AEB243F63CA00F20191 /* SceneDelegate.swift */; };
 		89813AEE243F63CA00F20191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89813AED243F63CA00F20191 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		892216C4244238F700BEC003 /* JBAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBAlertViewController.swift; sourceTree = "<group>"; };
 		892216CD2442F9C000BEC003 /* JBAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JBAlertViewController.xib; sourceTree = "<group>"; };
+		8952CE182446D8B700F310AD /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		89813AE6243F63CA00F20191 /* JBAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89813AE9243F63CA00F20191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89813AEB243F63CA00F20191 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				892216C4244238F700BEC003 /* JBAlertViewController.swift */,
 				892216CD2442F9C000BEC003 /* JBAlertViewController.xib */,
+				8952CE182446D8B700F310AD /* Animation.swift */,
 			);
 			path = JBAlert;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				892216C5244238F700BEC003 /* JBAlertViewController.swift in Sources */,
 				89813AEA243F63CA00F20191 /* AppDelegate.swift in Sources */,
 				89813AEC243F63CA00F20191 /* SceneDelegate.swift in Sources */,
+				8952CE192446D8B700F310AD /* Animation.swift in Sources */,
 				89813AFF243F647D00F20191 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

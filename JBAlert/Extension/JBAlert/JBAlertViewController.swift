@@ -23,6 +23,9 @@ class JBAlertViewController: UIViewController {
   
   // MARK: IBOutlet
   
+  @IBOutlet weak var animationContainerView: UIView!
+  @IBOutlet weak var animationView: Animation!
+  
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var messageLabel: UILabel!
   @IBOutlet weak var leftButton: UIButton!
@@ -32,6 +35,22 @@ class JBAlertViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setup()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    switch type {
+    case .success:
+      animationContainerView.isHidden = false
+      animationView.animate(animationType: .success)
+    case .fail:
+      animationContainerView.isHidden = false
+      animationView.animate(animationType: .fail)
+    case .alert:
+      animationContainerView.isHidden = true
+      ()
+    }
   }
   
   init(type: AlertType = .alert,
