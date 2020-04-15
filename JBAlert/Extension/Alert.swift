@@ -21,7 +21,7 @@ extension UIViewController {
   func alertWithoutCancel(type:AlertType = .alert,
              message: String?,
              title: String?,
-             rightButtonTitle: String? = nil,
+             rightButtonTitle: String? = "OK",
              rightButtonAction: (() -> Void)? = nil
   ) {
     let JBAlert = JBAlertViewController(
@@ -38,7 +38,7 @@ extension UIViewController {
   func alertWithCancel(type:AlertType = .alert,
              message: String?,
              title: String?,
-             rightButtonTitle: String? = nil,
+             rightButtonTitle: String? = "OK",
              cancelButton: String? = nil,
              rightButtonAction: (() -> Void)? = nil,
              leftButtonAction: (() -> Void)? = nil

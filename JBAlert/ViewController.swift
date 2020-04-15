@@ -43,16 +43,29 @@ class ViewController: UIViewController {
     }
       
     )
-    
-    
-    
   }
+  
+  @IBAction func successButton(_ sender: UIButton) {
+    alertWithoutCancel(
+      type: .success,
+      message: "JBAlert OK TEST",
+      title: "OK test",
+      rightButtonTitle: "OK",
+      rightButtonAction: { self.dismiss(animated: true, completion: nil)} )
+  }
+  
+  @IBAction func failButton(_ sender: UIButton) {
+    alertWithoutCancel(
+      type: .fail,
+        message: "JBAlert cancel TEST",
+        title: "Cancel test",
+        rightButtonTitle: "OK",
+        rightButtonAction: { self.dismiss(animated: true, completion: nil)} )
+    }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
-  
-  
 }
 

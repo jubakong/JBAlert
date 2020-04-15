@@ -12,11 +12,6 @@ import UIKit
 @IBDesignable
 class Animation: UIView {
   
-  enum AnimationType {
-    case check
-    case remove
-  }
-  
   // MARK: Public variables
   var animatedLayerColor: UIColor = .black {
     didSet {
@@ -50,28 +45,6 @@ class Animation: UIView {
     if animatedLayer == nil {
       animatedLayer = createCheckmarkLayer(strokeColor: animatedLayerColor, strokeEnd: 0, animationType)
       layer.addSublayer(animatedLayer!)
-    }
-    
-    let animation = CABasicAnimation(keyPath: "strokeEnd")
-    animation.fromValue = 0
-    animation.toValue = 1
-    animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
-    animation.duration = duration
-    
-    animatedLayer?.strokeEnd = 1
-    animatedLayer?.add(animation, forKey: "animateCheckmark")
-  }
-  
-  public func animate(duration: TimeInterval = 0.2, animationType: AnimationType) {
-    switch animationType {
-    case .check:
-      animatedLayer?.removeFromSuperlayer()
-      animatedLayer = nil
-      animatedLayer = createCheckmarkLayer(strokeColor: animatedLayerColor, strokeEnd: 0, .check)
-      layer.addSublayer(animatedLayer!)
-    case .remove:
-      animatedLayer?.removeFromSuperlayer()
-      animatedLayer = nil
     }
     
     let animation = CABasicAnimation(keyPath: "strokeEnd")
@@ -120,37 +93,6 @@ class Animation: UIView {
       checkmarkPath.addLine(to: CGPoint(x: centerX - 18 * scale, y: centerY + 18 * scale))
       
     case .alert: ()
-    }
-    
-    let checkmarkLayer = CAShapeLayer()
-    checkmarkLayer.fillColor = UIColor.clear.cgColor
-    checkmarkLayer.lineWidth = strokeWidth
-    checkmarkLayer.path = checkmarkPath.cgPath
-    checkmarkLayer.strokeEnd = strokeEnd
-    checkmarkLayer.strokeColor = strokeColor.cgColor
-    checkmarkLayer.lineCap = CAShapeLayerLineCap.round
-    checkmarkLayer.lineJoin = CAShapeLayerLineJoin.round
-    
-    return checkmarkLayer
-  }
-  
-  private func createCheckmarkLayer(
-    strokeColor: UIColor,
-    strokeEnd: CGFloat,
-    _ type: AnimationType
-  ) -> CAShapeLayer {
-    let scale = frame.width / 100
-    let centerX = frame.size.width / 2
-    let centerY = frame.size.height / 2
-    
-    let checkmarkPath = UIBezierPath()
-    
-    switch type {
-    case .check:
-      checkmarkPath.move(to: CGPoint(x: centerX - 23 * scale, y: centerY - 1 * scale))
-      checkmarkPath.addLine(to: CGPoint(x: centerX - 6 * scale, y: centerY + 15.9 * scale))
-      checkmarkPath.addLine(to: CGPoint(x: centerX + 22.8 * scale, y: centerY - 13.4 * scale))
-    case .remove: ()
     }
     
     let checkmarkLayer = CAShapeLayer()

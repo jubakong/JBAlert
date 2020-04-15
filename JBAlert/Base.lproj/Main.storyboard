@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="4z4-v4-67C">
-                                <rect key="frame" x="50" y="244" width="314" height="418"/>
+                                <rect key="frame" x="50" y="294" width="314" height="318"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3x-Xh-uqb">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="104"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="70.5"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="CLICK ME">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -29,18 +29,24 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKx-Pb-led">
-                                        <rect key="frame" x="0.0" y="157" width="314" height="104"/>
+                                        <rect key="frame" x="0.0" y="123.5" width="314" height="71"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="CLICK ME">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="successButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPP-tU-CoH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zk-vw-TAO">
-                                        <rect key="frame" x="0.0" y="314" width="314" height="104"/>
+                                        <rect key="frame" x="0.0" y="247.5" width="314" height="70.5"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="CLICK ME">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="failButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ti4-pQ-6WV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -51,10 +57,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4z4-v4-67C" secondAttribute="bottom" constant="200" id="8O8-Wa-AEw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4z4-v4-67C" secondAttribute="bottom" constant="250" id="8O8-Wa-AEw"/>
                             <constraint firstItem="4z4-v4-67C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="RCE-Jg-1ch"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4z4-v4-67C" secondAttribute="trailing" constant="50" id="Szy-Cw-CLr"/>
-                            <constraint firstItem="4z4-v4-67C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="eTJ-yR-uGt"/>
+                            <constraint firstItem="4z4-v4-67C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="eTJ-yR-uGt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
