@@ -5,4 +5,4 @@
 2. Cancel버튼
 - Alert
 
-![3wpe3u](https://user-images.githubusercontent.com/52398126/79314676-f4cc0c80-7f3c-11ea-9a4b-f9d1ca29b268.gif)
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/52398126/79314992-6b690a00-7f3d-11ea-9909-6c79da7ee82e.gif)
