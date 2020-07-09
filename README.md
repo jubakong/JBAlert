@@ -1,4 +1,4 @@
-# JBAlert for easier use of Alert
+# JBAlert for Easier Use of Alert
 
 ## Main Functions
 1. OK and Cancel Button
