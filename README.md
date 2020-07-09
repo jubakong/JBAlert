@@ -1,8 +1,9 @@
 # JBAlert for easier use of Alert
 
 ## Main Functions
-1. OK Button
-2. Cancel Button
+1. OK and Cancel Button
+2. OK Button
+3. Cancel Button
 
 - Alert
 
