@@ -1,9 +1,13 @@
 # JBAlert for Easier Use of Alert
 
+
+
 ## Main Functions
 1. OK and Cancel Button
 2. OK Button
 3. Cancel Button
+
+### It is made based on Core Animation. 
 
 - Alert
 
