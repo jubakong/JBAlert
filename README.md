@@ -9,7 +9,7 @@
 
 #### It is made based on Core Animation for check-mark and X mark. 
 
-- Alert
+- Preveiw
 
 ![ezgif com-resize](https://user-images.githubusercontent.com/52398126/79315359-c13db200-7f3d-11ea-9a64-d9e856d14ae8.gif)
 
