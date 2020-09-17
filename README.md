@@ -7,7 +7,7 @@
 2. OK Button
 3. Cancel Button
 
-### It is made based on Core Animation. 
+#### It is made based on Core Animation for check-mark and X mark. 
 
 - Alert
 
