@@ -1,12 +1,12 @@
 # JBAlert 
-for Easier Use of Alert
+- for Easier Use of Alert
 
 
 
-## Main Functions
+## Main Features
 1. OK and Cancel Button
-2. OK Button
-3. Cancel Button
+2. OK Button ONLY
+3. Cancel Button ONLY
 
 #### It is made based on Core Animation for check-mark and X mark.
 
