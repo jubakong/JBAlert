@@ -1,4 +1,5 @@
-# JBAlert for Easier Use of Alert
+# JBAlert 
+`for Easier Use of Alert`
 
 
 
