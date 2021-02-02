@@ -19,29 +19,29 @@ class ViewController: UIViewController {
                     cancelButton: "Nope",
                     rightButtonAction: {
                       self.dismiss(animated: true, completion:
-                        { self.alertWithoutCancel(
-                          type: .success,
-                          message: "Successfully test for OK button!",
-                          title: "JB TEST for OK",
-                          rightButtonTitle: "OK",
-                          rightButtonAction: { self.dismiss(animated: true, completion: nil)}
-                          )
-                      }
+                                    { self.alertWithoutCancel(
+                                      type: .success,
+                                      message: "Successfully test for OK button!",
+                                      title: "JB TEST for OK",
+                                      rightButtonTitle: "OK",
+                                      rightButtonAction: { self.dismiss(animated: true, completion: nil)}
+                                    )
+                                    }
                       )
-    },
+                    },
                     leftButtonAction: {
                       self.dismiss(animated: true, completion:
-                        { self.alertWithoutCancel(
-                          type: .fail,
-                          message: "Successfully test for Cancel button!",
-                          title: "JB TEST for Cancel",
-                          rightButtonTitle: "OK",
-                          rightButtonAction: { self.dismiss(animated: true, completion: nil)}
-                          )
-                      }
+                                    { self.alertWithoutCancel(
+                                      type: .fail,
+                                      message: "Successfully test for Cancel button!",
+                                      title: "JB TEST for Cancel",
+                                      rightButtonTitle: "OK",
+                                      rightButtonAction: { self.dismiss(animated: true, completion: nil)}
+                                    )
+                                    }
                       )
-    }
-      
+                    }
+                    
     )
   }
   
@@ -57,11 +57,11 @@ class ViewController: UIViewController {
   @IBAction func failButton(_ sender: UIButton) {
     alertWithoutCancel(
       type: .fail,
-        message: "JBAlert cancel TEST",
-        title: "Cancel test",
-        rightButtonTitle: "OK",
-        rightButtonAction: { self.dismiss(animated: true, completion: nil)} )
-    }
+      message: "JBAlert cancel TEST",
+      title: "Cancel test",
+      rightButtonTitle: "OK",
+      rightButtonAction: { self.dismiss(animated: true, completion: nil)} )
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
