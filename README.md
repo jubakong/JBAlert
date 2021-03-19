@@ -1,5 +1,5 @@
 # JBAlert 
-for Easier Use of Alert
+Easier Use of Alert
 
 
 
