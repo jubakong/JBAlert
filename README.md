@@ -7,7 +7,7 @@ Easier Use of Alert
 2. OK Button ONLY
 3. Cancel Button ONLY
 
-#### It is made based on Core Animation for check-mark and X mark.
+#### It is made based on Core Animation for check-mark and X mark. ( O and X )
 
 - Preveiw
 
