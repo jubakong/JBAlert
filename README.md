@@ -1,7 +1,6 @@
 # JBAlert 
 Easier Use of Alert
 
-
 ## Main Features
 1. OK and Cancel Button
 2. OK Button ONLY
@@ -16,7 +15,7 @@ Easier Use of Alert
 ## Guideline :
 
 ### First
-###### Add 'Alert.Swift' file to your Project
+###### Download and add 'Alert.Swift' file to your Project
 
 ### Example for AlertWithCancel
 <img width="823" alt="스크린샷 2020-07-05 오후 10 46 02" src="https://user-images.githubusercontent.com/52398126/86534193-5f279400-bf11-11ea-8853-ab8d0067f209.png">
