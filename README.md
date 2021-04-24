@@ -2,9 +2,9 @@
 Easier Use of Alert:
 
 ## Main Features
-1. OK and Cancel Button
-2. OK Button ONLY
-3. Cancel Button ONLY
+- OK and Cancel Button
+- OK Button ONLY
+- Cancel Button ONLY
 
 #### It is made based on Core Animation for check-mark and X mark. ( O and X )
 
