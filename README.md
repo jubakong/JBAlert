@@ -4,7 +4,7 @@ Easier Use of Alert:
 ## Main Features
 - OK and Cancel Button
 - OK Button ONLY
-- Cancel Button ONLY
+- Cancel Button ONLY 
 
 #### It is made based on Core Animation for check-mark and X mark. ( O and X )
 
