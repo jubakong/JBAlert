@@ -1,5 +1,5 @@
 # JBAlert 
-Easier Use of Alert :
+Easier Use of Alert:
 
 ## Main Features
 1. OK and Cancel Button
