@@ -2,7 +2,7 @@
 Easier Use of Alert:
 
 ## Main Features
-- OK and Cancel Button
+- BOTH OK and Cancel Button 
 - OK Button ONLY
 - Cancel Button ONLY 
 
