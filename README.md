@@ -1,5 +1,5 @@
 # JBAlert 
-Easier Use of AlertViewControlelr:
+Easier Use of AlertViewController:
 
 ## Main Features
 - BOTH OK and Cancel Button 
